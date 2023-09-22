@@ -1,0 +1,13 @@
+batch_size: 32
+gradient_accumulation_steps: 1
+checkpoint_every_step: 1000
+num_training_steps: 1000
+tokenizer_type: ./t5-large
+lm_type: ./t5-large
+prefix_length: 5
+prefix_set_number: 2
+sample_num: 1
+label_path: NLU_training_dataset/nyt/labels.txt
+dev_path: NLU_training_dataset/nyt/valid_whole.txt
+test_path: NLU_training_dataset/nyt/test_whole.txt
+enable_sentence_classification: True
